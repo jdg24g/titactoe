@@ -37,7 +37,6 @@ cells.forEach((cell) => {
       cell.textContent = currentPlayer;
       if (checkWin()) {
         gameEnd = true;
-        alert(`${currentPlayer} es el ganador!`);
       } else if (checkTie()) {
         gameEnd = true;
         alert("Excelente juego, es un empate!");
@@ -55,6 +54,7 @@ function checkWin() {
       alert(`${currentPlayer} es el ganador!`);
       let wins = localStorage.getItem(currentPlayer);
       localStorage.setItem(currentPlayer, ++wins);
+      console.log(currentPlayer,wins)
       return true;
     } else {
       return false;
