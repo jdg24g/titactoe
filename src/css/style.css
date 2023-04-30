@@ -1,4 +1,17 @@
-#board {
+*{
+  margin: 0;
+  padding: 0;
+}
+h1{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.container-sm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-sm #board {
   display: flex;
   flex-wrap: wrap;
   width: 300px;
@@ -13,4 +26,15 @@
   align-items: center;
   font-size: 60px;
   cursor: pointer;
+}
+.container{
+  width: 90%;
+}
+.left{
+  margin-top: 20px;
+  float: left;
+}
+.rigth{
+  float: right;
+  margin-top: 20px;
 }
